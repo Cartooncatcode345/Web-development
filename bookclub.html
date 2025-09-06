@@ -5,6 +5,34 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Mount Caramel Book Club</title>
+     <style>
+          body{
+               background-color: aqua;
+          }
+          header{
+               background-color: aquamarine;
+          }
+          nav{
+               background-color: antiquewhite;
+          }
+          #intro{
+               background-color: lightblue;
+          }
+          .main-section-content h2{
+               background-color: lightsteelblue;
+          }
+          #bestsellers, footer{
+               background-color: lightskyblue;
+          }
+          header,
+          nav,
+          #intro,
+          #bestsellers,
+          #main-section,
+          footer{
+               border: 1px solid black;
+          }
+     </style>
 </head>
 
 <body>
@@ -61,7 +89,8 @@
                                         <h3>Ms Caroline</h3>
                                         <p>She teaches secondary and high school kids and she has a degree on
                                              <i>Master's of
-                                                  Arts</i></p>
+                                                  Arts</i>
+                                        </p>
                                    </div>
                               </div>
                          </div>
@@ -69,62 +98,74 @@
 
                     <!-- Content 2 -->
 
-                    <h2>Book reviews</h2>
-                    <h3>Alice in Wonderland</h3>
-                    <p><strong>Shekhar</strong> <q>I really enjoyed reading this book.</q></p>
-                    <p><strong>Amit:</strong> <q>I love reading this book.this is a must read for everyone.</q></p>
+                    <div id="book-reviews" class="main-section-content">
+                         <h2>Book reviews</h2>
+                         <h3>Alice in Wonderland</h3>
+                         <p><strong>Shekhar</strong> <q>I really enjoyed reading this book.</q></p>
+                         <p><strong>Amit:</strong> <q>I love reading this book.this is a must read for everyone.</q></p>
+                    </div>
 
                     <!--Content 3 (videos)  -->
 
-                    <iframe src="https://www.youtube.com/watch?v=xrAsBqeE8tk" frameborder="0"></iframe>
+                    <div id="videos" class="main-section-content">
+                         <iframe src="https://www.youtube.com/watch?v=xrAsBqeE8tk" frameborder="0"></iframe>
+                    </div>
 
                     <!-- Content 4 (table) -->
 
-                    <h2>Opening timings</h2>
-                    <table>
-                         <tr>
-                              <th>Monday </th>
-                              <td>11am - 3pm</td>
-                         </tr>
-                         <tr>
-                              <th>Tuesday</th>
-                              <td>11am - 3pm</td>
-                         </tr>
-                         <tr>
-                              <th>Wednesday</th>
-                              <td>11am - 3pm</td>
-                         </tr>
-                         <tr>
-                              <th>Thursday</th>
-                              <td>11am - 3pm</td>
-                         </tr>
-                         <tr>
-                              <th>Friday</th>
-                              <td>11am - 1pm</td>
-                         </tr>
-                         <tr>
-                              <th>Saturday</th>
-                              <td>11am - 1pm</td>
-                         </tr>
-                         <tr>
-                              <th>Sunday</th>
-                              <td>Closed</td>
-                         </tr>
-                    </table>
+                    <div class="main-section-content">
+                         <h2>Opening timings</h2>
+                         <table>
+                              <tr>
+                                   <th>Monday </th>
+                                   <td>11am - 3pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Tuesday</th>
+                                   <td>11am - 3pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Wednesday</th>
+                                   <td>11am - 3pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Thursday</th>
+                                   <td>11am - 3pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Friday</th>
+                                   <td>11am - 1pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Saturday</th>
+                                   <td>11am - 1pm</td>
+                              </tr>
+                              <tr>
+                                   <th>Sunday</th>
+                                   <td>Closed</td>
+                              </tr>
+                         </table>
+                    </div>
                </div>
 
                <!-- Best sellers Section -->
-               <h2>Best sellers</h2>
-               <b>Pearl Maiden</b> by <em>H.R. Haggard</em><br />
-               <b>Angels and Demons</b> by <em>Dan Brown</em><br />
-               <b>Alchemist</b> by <em>Paulo Coelho</em><br />
-               <b>Debi</b> by <em>Humayun Ahmed</em><br />
+               <div id="bestsellers">
+                    <h2>Best sellers</h2>
+                    <ol>
+                         <li><b>Pearl Maiden</b> by <em>H.R. Haggard</em><br /></li>
+                         <li><b>Angels and Demons</b> by <em>Dan Brown</em><br /></li>
+                         <li><b>Alchemist</b> by <em>Paulo Coelho</em><br /></li>
+                         <li><b>Debi</b> by <em>Humayun Ahmed</em><br /></li>
+                    </ol>
+               </div>
 
                <!-- Contact Us -->
-               <p>Contact us:Ms. Caroline</p>
-               <p>Phone no: +12423532453425</p>
-               <address>221 Baker street, London, UK</address>
-
+               <footer>
+                    <p><span>Contact us</span>:Ms. Caroline</p>
+                    <p><span>Phone no:</span> +12423532453425</p>
+                    <address>221 Baker street, London, UK</address>
+               </footer>
+               <button>Enquiry</button>
           </div>
 
 </body>
