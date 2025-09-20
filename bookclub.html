@@ -13,11 +13,19 @@
 
           header {
                background-color: aquamarine;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
 
           }
 
           nav {
                background-color: antiquewhite;
+               position: sticky;
+               top: 0px;
+               z-index: 2;
+               display: flex;
+               justify-content: center;
 
           }
 
@@ -91,6 +99,9 @@
                margin: 10px;
                width: 400px;
                box-shadow: 6px 0px 21px -3px #333333;
+               display: flex;
+               justify-content: center;
+               align-items: center;
           }
 
           button {
@@ -101,6 +112,9 @@
                padding: 5px;
                border-radius: 5px;
                border: none;
+               position: fixed;
+               bottom: 40px;
+               right: 50px;
           }
 
           ul {
@@ -158,10 +172,22 @@
 
           #bestsellers h2 {
                padding: 20px;
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
           }
 
           ol li {
-               margin-bottom: 20px;
+               margin-bottom: 20px;              
+          }
+          #teachers{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          nav ul{
+              display: flex;
+              justify-content: space-between;
           }
      </style>
 </head>
