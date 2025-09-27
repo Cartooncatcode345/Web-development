@@ -46,16 +46,34 @@
             
             
         }
-        .h1-section{
+        .header{
             text-align: center;
             display: flex;
             justify-content: center;
         }
+        header{
+            grid-area: header;
+        }
+        p{
+            grid-area: p;
+        }
+        table{
+            grid-area: table;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto;
+            grid-template-areas: header header header header
+                                 p p p p
+                                 table table table table;
+        }
+
     </style>
 
-</head>
+<div class="grid-container">
+    </head>
 <!-- our tradition -->
-<div id="h1-section">
+<div id="header">
     <H1>Cuisines of bangladesh</H1>
 <img src="Rice.jpeg" alt="Cuisines">
 
@@ -90,7 +108,8 @@
     </table>
     </div>
     <!--Popular dishes -->
-    <table>
+    <div id="Table">
+        <table>
         <tr>
             <th>Briyani</th>
             <td>A flavorful rice dish cooked with meat (chicken, mutton, beef), fish, or vegetables and spices. </td>
@@ -113,6 +132,8 @@
         </tr>
     </table>
 
+    </div>
+</div>
 
 
 
